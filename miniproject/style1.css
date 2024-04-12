@@ -1,0 +1,367 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+#menu .head img{
+    width: 40px;
+    height:40px;
+    margin:13px;
+}
+body{
+    width:100%;
+    background:rgb(231, 231, 231);
+    position:relative;
+    display:flex;
+}
+#menu .head{
+    display:flex;
+    padding: 20px 25px;
+
+}
+#menu .head h1{
+    color:white;
+    padding: 15px 0px;
+    font-size:34px;
+}
+    
+
+#menu .pages li a{
+    text-decoration: none;
+    color:rgb(188, 189, 188);
+    padding: 10px;
+    font-size:20px;
+    transition:0.3s ease;
+}
+#menu .pages li:hover{
+    background-color: rgb(60, 61, 60);
+    color:white;
+}
+#menu .pages li:nth-child(1){
+    border-left:2px solid white;
+}
+#menu .pages li i{
+    color:rgb(23, 128, 23);
+    font-size: 20px;
+    padding-left:20px;
+}
+#menu .pages li{
+    list-style: none;
+    padding:15px;
+}
+#menu{
+    width: 300px;
+    background-color: rgb(24, 29, 24);
+    height:100%;
+    left:0;
+    top:0;
+    position:fixed;
+}
+#interface{
+    width:calc(100% - 300px);
+    margin-left: 300px;
+    position: relative;
+}
+#interface .navigation{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding:15px 30px;
+    border-bottom:3px solid rgb(12, 131, 12);
+    position:fixed;
+    width:calc(100% - 300px);
+}
+#interface .navigation .search{
+    display:flex;
+    align-items: center;
+    padding:10px 14px;
+    border:1px solid rgb(192, 192, 192);
+    border-radius: 4px;
+}
+#interface .navigation .search i{
+    margin-right: 4px;
+}
+#interface .navigation .search input{
+    border: none;
+    outline:none;
+    font-size: 14px;
+}
+#interface .navigation .profile{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#interface .navigation .profile i{
+    margin-right: 20px;
+    font-size: 19px;
+    font-weight: 400;
+}
+#interface .navigation .profile img{
+    width: 30px;
+    height:30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.i-name{
+    color:rgb(126, 126, 126);
+    padding:30px 30px 0px 30px;
+    font-size:24px;
+    font-weight:700;
+    margin-top:70px;
+}
+.values{
+    padding:30px 30px 0px 30px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.values .val-box{
+    background: white;
+    width: 22%;
+    padding: 16px 20px;
+    border-radius: 5px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.values .val-box:nth-child(1) i{
+    background: rgb(128, 0, 122);
+}
+.values .val-box:nth-child(2) i{
+    background: rgb(0, 19, 128);
+}
+.values .val-box:nth-child(3) i{
+    background: rgb(128, 98, 0);
+}
+.values .val-box:nth-child(4) i{
+    background: rgb(0, 128, 0);
+}
+.values .val-box i{
+    font-size: 25px;
+    width:60px;
+    height:60px;
+    line-height: 60px;
+    border-radius:50%;
+    text-align:center;
+    color:white;
+    background-color: rgb(57, 185, 57);
+    margin-right:15px;
+}
+.values .val-box h3{
+    font-size: 14px;
+    font-weight:600;
+}
+.values .val-box h3 a{
+     text-decoration: none;
+     color: #000;
+}
+.values .val-box h3 a:hover{
+    color:green;
+}
+.values .val-box span{
+    font-size: 15px;
+    color:rgb(146, 146, 146);
+}
+.board{
+    width:94%;
+    margin:30px  0 30px 30px;
+    overflow:hidden;
+    background:white;
+    border-radius:8px;
+}
+
+.view-btn{
+    background-color:rgb(40,70,230);
+    padding:5px 10px;
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+.chart{
+    display:flex;
+}
+.filter{
+    display:flex;
+    margin:20px 30px;
+}
+.filter .filter1{
+    margin:0px 20px 0px 0px;
+}
+.filter .filter2{
+    margin:0px 0px 0px 20px;
+}
+.filter select{
+    padding:15px 30px;
+    border:none;
+    background:#fefefe;
+}
+.view-btn1{
+    background-color:rgb(24, 185, 24);
+    padding:5px 10px;
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+.view-btn1:hover{
+    background-color:rgb(66, 184, 66);
+}
+.view-btn2{
+    background-color:rgb(185, 24, 24);
+    padding:5px 10px;
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+.view-btn2:hover{
+    background-color:rgb(187, 54, 54);
+
+}
+.view-btn:hover{
+    background-color:rgb(92, 114, 236);
+
+}
+.board img{
+    width:45px;
+    height:45px;
+    object-fit:cover;
+    border-radius: 50%;
+    margin-right:15px;
+}
+.board h5{
+    font-weight: 600;
+    font-size: 14px;
+}
+hr{
+    margin-top: 10px;
+}
+.board p{
+    font-weight: 400;
+    font-size: 13px;
+    color:rgb(128, 127, 127);
+}
+.board .students{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+}
+input[type=submit]{
+    cursor: pointer;
+    margin:0% 37%;
+}
+table{
+    border-collapse:collapse;
+}
+tr{
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+thead td{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    background: rgb(248, 248, 248);
+    text-align: start;
+    padding:15px;
+}
+tbody tr td{
+    padding:10px 15px;
+}
+.hostel p{
+    background:rgb(196, 250, 180);
+    padding:2px 10px;
+    display:inline-block;
+    border-radius: 40px;
+    color:rgb(36, 134, 27);
+}
+.edit a{
+    text-decoration: none;
+    font-size:14px;
+    color:blue;
+    font-weight: 600;
+}
+
+.n1{
+   display:flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+#menu-btn{
+    display:none;
+    color:rgb(56, 56, 56);
+    font-size:25px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+@media (max-width:769px) {
+    #menu {
+        width: 270px;
+        left: -270;
+        position: fixed;
+        transition: 0.3s ease;
+    }
+    #menu-btn{
+        display:initial;
+    }
+    #menu.active{
+         left:0px;
+    }
+    #interface {
+        width: 100%;
+        margin-left: 0px;
+        display:inline-block;
+        transition: 0.3s ease;
+    }
+   
+    #menu.active~ #interface{
+        width: calc(100% - 270px);
+        margin-left: 270px;
+        transition: 0.3s ease;
+    }
+    #interface .navigation {
+        width:100%;
+    }
+    .values {
+        padding: 30px 30px 0px 30px;
+        justify-content: flex-start;
+    }
+    .values .val-box {
+        padding:16px 20px;
+        margin:10px 20px 10px 0;
+    }
+    .board {
+        width: 92%;
+        padding: 0;
+        overflow-x:auto;
+    }
+    table{
+        width:100%;
+        border-collapse:collapse;
+    }
+}
+@media (max-width:477px){
+    #interface .navigation{
+        padding:15px;
+    }
+    #interface .navigation .search input{
+        width:150px;
+    }
+    .i-name{
+          padding: 30px 15px 0 15px;
+    }
+    .values{
+        padding:15px 15px 0px 15px;
+    }
+    .values .val-box{
+        width: 100%;
+        margin:8px 0;
+    }
+    .board{
+        margin:30px 15px 30px 15px;
+    }
+}

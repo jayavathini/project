@@ -1,0 +1,26 @@
+
+.btn input{
+    border:none;
+    border-radius: 5px;
+    padding:9px 14px;
+    font-size: 16px;
+    background-color:rgb(24, 185, 24);
+    color:white;
+}
+.btn-1 input{
+    border:none;
+    border-radius: 5px;
+    padding:9px 14px;
+    font-size: 16px;
+    background-color:rgb(185, 24, 24);
+    color:white;
+}
+.btn input:hover{
+    cursor: pointer;
+    background-color:rgb(48, 202, 73) ;
+}
+.btn-1 input:hover{
+    
+    cursor: pointer;
+    background-color:rgb(202, 48, 48) ;
+}

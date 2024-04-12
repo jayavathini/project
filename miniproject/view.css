@@ -1,0 +1,23 @@
+th,td{
+    padding:16px 5px;
+    font-size: 13px;
+    border:solid;
+    border-width:0px 0 1px 0;
+}
+thead tr{
+    text-align:left;
+    background-color:green;
+}
+table{
+    width:100%;
+
+}
+tbody tr:nth-child(even) {
+    background: rgb(146, 144, 144);
+}
+tbody tr:nth-child(odd) {
+    background: rgb(255, 255, 255);
+}
+h2{
+    padding:20px;
+}
